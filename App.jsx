@@ -18,6 +18,7 @@ import {
   Image5,
   Image6,
 } from './Assets/SVGs';
+import Colors from './Ui-kit/Colors';
 
 const Data = [
   {
@@ -121,10 +122,12 @@ const App = () => {
         numColumns={2}
         keyExtractor={item => item.id}
         renderItem={({item}) => (
-          <View style={styles.shoeContainer}>
+          <View style={styles.midContainer}>
             <View style={styles.shoeContent}>
               <View style={styles.shoeImage}>{item.photo}</View>
-              <TouchableOpacity onPress={() => handleHeartPress(item.id)}>
+              <TouchableOpacity
+                activeOpacity={2}
+                onPress={() => handleHeartPress(item.id)}>
                 <View style={styles.heart}>
                   {item.isHeartPressed ? (
                     <LottieView
@@ -151,14 +154,14 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F4F4F4',
+    backgroundColor: Colors.Whitesmoke,
     flex: 1,
     paddingLeft: 22,
   },
-  shoeContainer: {
+  midContainer: {
     flex: 1,
     borderRadius: 15,
-    backgroundColor: 'white',
+    backgroundColor: Colors.White,
     marginBottom: 20,
     marginLeft: 12,
     marginRight: 12,
@@ -204,6 +207,7 @@ const styles = StyleSheet.create({
     paddingTop: 7,
     paddingHorizontal: 15,
     paddingBottom: 15,
+    fontWeight: 'bold',
   },
 });
 

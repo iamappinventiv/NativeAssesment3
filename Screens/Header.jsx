@@ -1,9 +1,15 @@
 import React from 'react';
-import {View, Text, TextInput, StyleSheet, TouchableOpacity} from 'react-native';
-
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 import {Hamburger, Search, Arrow, Filter} from '../Assets/SVGs';
+import Colors from '../Ui-kit/Colors';
 
-const Header = ({title}) => {
+const Header = () => {
   return (
     <>
       <View style={styles.topView}>
@@ -16,7 +22,7 @@ const Header = ({title}) => {
         </View>
       </View>
       <View style={styles.headingArea}>
-        <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+        <View>
           <Text style={styles.text}> Sneakers </Text>
         </View>
         <View style={styles.topIcons}>
@@ -43,7 +49,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1,
     alignItems: 'center',
-    
+
     shadowOffset: {
       width: 2,
       height: 2,
@@ -51,7 +57,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    backgroundColor: 'white',
+    backgroundColor: Colors.White,
     marginVertical: 8,
     marginRight: 20,
     paddingHorizontal: 6,
@@ -62,13 +68,14 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   text: {
-    fontSize: 30,
+    fontSize: 36,
     fontWeight: '800',
     marginTop: 20,
     marginLeft: 12,
   },
   headingArea: {
     flexDirection: 'row',
+    justifyContent: 'center',
   },
   topIcons: {
     flexDirection: 'row',
@@ -80,10 +87,10 @@ const styles = StyleSheet.create({
   subHeading: {
     paddingLeft: 20,
     paddingTop: 7,
-    color: 'black',
-    paddingBottom:20
+    color: Colors.Black,
+    paddingBottom: 20,
   },
-  
+
   title: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -91,7 +98,7 @@ const styles = StyleSheet.create({
   },
   numProducts: {
     fontSize: 14,
-    color: '#777',
+    color: Colors.Black,
   },
 });
 

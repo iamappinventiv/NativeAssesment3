@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
+import Colors from '../Ui-kit/Colors';
 
 const Card = ({item}) => {
   return (
@@ -16,11 +17,11 @@ const Card = ({item}) => {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.White,
     marginVertical: 10,
     marginHorizontal: 20,
     borderRadius: 10,
-    shadowColor: '#000',
+    shadowColor: Colors.Black,
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.1,
     shadowRadius: 2,
@@ -39,17 +40,17 @@ const styles = StyleSheet.create({
   },
   brand: {
     fontSize: 18,
-    fontWeight: 'bold',
+    color: Colors.Gray,
   },
   name: {
     fontSize: 14,
-    color: '#777',
+    color: Colors.Black,
   },
 
   price: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#000',
+    color: Colors.Black,
   },
 });
 export default Card;
