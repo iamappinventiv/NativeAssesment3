@@ -6,7 +6,7 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
-import {Hamburger, Search, Arrow, Filter} from '../Assets/SVGs';
+import {Hamburger, Search, Arrow, Filter} from '../assets/SVGs';
 import Colors from '../Ui-kit/Colors';
 
 const Header = () => {
@@ -68,10 +68,11 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   text: {
-    fontSize: 36,
+    fontSize: 38,
     fontWeight: '800',
     marginTop: 20,
-    marginLeft: 12,
+    marginLeft: 6,
+    fontFamily:'Montserrat-Bold'
   },
   headingArea: {
     flexDirection: 'row',
@@ -90,8 +91,8 @@ const styles = StyleSheet.create({
     color: Colors.Black,
     paddingBottom: 20,
   },
-
   title: {
+    fontFamily: 'Montserrat-Regular',
     fontSize: 24,
     fontWeight: 'bold',
     marginRight: 10,

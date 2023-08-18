@@ -41,16 +41,19 @@ const styles = StyleSheet.create({
   brand: {
     fontSize: 18,
     color: Colors.Gray,
+    fontFamily:'Montserrat-Bold'
   },
   name: {
     fontSize: 14,
     color: Colors.Black,
+    fontFamily:'Montserrat-Bold'
   },
 
   price: {
     fontSize: 18,
     fontWeight: 'bold',
     color: Colors.Black,
+    fontFamily:'Montserrat-Bold'
   },
 });
 export default Card;

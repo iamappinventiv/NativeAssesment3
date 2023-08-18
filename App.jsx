@@ -17,7 +17,7 @@ import {
   Image4,
   Image5,
   Image6,
-} from './Assets/SVGs';
+} from './assets/SVGs';
 import Colors from './Ui-kit/Colors';
 
 const Data = [
@@ -116,7 +116,7 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header title="Sneakers" numProducts={25} />
+      <Header  numProducts={25} />
       <FlatList
         data={data}
         numColumns={2}
@@ -131,7 +131,7 @@ const App = () => {
                 <View style={styles.heart}>
                   {item.isHeartPressed ? (
                     <LottieView
-                      source={require('./Assets/heart.json')}
+                      source={require('./assets/heart.json')}
                       autoPlay
                       loop={false}
                       style={styles.lottie}
